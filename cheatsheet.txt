@@ -1,0 +1,12 @@
+Собрать эксперимент (запускай из той папки, чтобы все импорты по кайфу были ежи)
+bash ~/deep_pipe/scripts/build_experiment.sh '/nmnt/media/home/l0ki4/diploma/GhostVLAD_mris/configs/ghost_vlad.config'\
+ '/nmnt/media/home/l0ki4/diploma/cur_experiments/ghost_12_1'
+
+запустить эксперимент:
+qexp "/nmnt/media/home/l0ki4/diploma/cur_experiments/ghost_12_1/" --logdir "/nmnt/media/home/l0ki4/diploma/cur_experiments/ghost_12_1_logs/" -g 1 -r 12 -pr -3
+
+мониторинг:
+qstat -u \*
+
+удалить все:
+rm -rf /nmnt/media/home/l0ki4/diploma/cur_experiments/ghost_12_1
